@@ -1,0 +1,20 @@
+name: Hoop
+version: '${project.version}'
+main: pl.nodirection6130.hoop.HoopPlugin
+api-version: '1.21'
+description: Custom home teleport plugin
+authors: [nodirection6130]
+
+commands:
+  hoop:
+    description: Open your hoop teleport GUI
+    usage: /hoop [player]
+    permission: hoop.use
+
+permissions:
+  hoop.use:
+    description: Allows using /hoop
+    default: true
+  hoop.admin:
+    description: Allows using /hoop <player> to manage other players hoops
+    default: op
